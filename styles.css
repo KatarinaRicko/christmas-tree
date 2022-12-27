@@ -4,7 +4,7 @@ header {
   font-size: 5rem;
   font-family: "Cascadia Code", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   color: rgb(255, 255, 255);
-  text-shadow: 7px 9px 50px #d8d4d4, 5px 5px 10px #efeffd;
+  text-shadow: 7px 9px 50px #c9abbf, 5px 5px 10px #efeffd;
 }
 section {
   overflow: hidden;
@@ -57,7 +57,7 @@ button {
   background: #fdfdfd;
   border: 0;
   border-radius: 8px;
-  box-shadow: -10px -10px 30px 0 rgb(243, 243, 243), 10px 10px 30px 0 #b8b8c017;
+  box-shadow: 0px 0px 30px 0 rgb(239, 214, 240), 10px 10px 30px 0 #b8b8c017;
   box-sizing: border-box;
   color: #d4d4d4;
   cursor: pointer;
