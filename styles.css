@@ -1,0 +1,71 @@
+header {
+  padding: 5rem;
+  text-align: center;
+  font-size: 5rem;
+  font-family: "Cascadia Code", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  color: rgb(255, 255, 255);
+  text-shadow: 7px 9px 50px #d8d4d4, 5px 5px 10px #efeffd;
+}
+section {
+  overflow: hidden;
+}
+
+#container {
+  width: 80%;
+  height: 60vh;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  border: 20px dotted red;
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 3rem;
+}
+
+#container:hover {
+  border: 20px dotted white;
+}
+
+.tree {
+  --bg-url: url(images/tree1.png);
+  --hover-bg-url: url(images/tree1-positive.png);
+
+  top: calc(var(--y, 20) * 1px);
+  left: calc(var(--x, 20) * 1px);
+  width: 150px;
+  height: 150px;
+
+  position: absolute;
+
+  background: var(--bg-url);
+  background-size: cover;
+}
+
+.tree:hover {
+  background: var(--hover-bg-url);
+  background-size: cover;
+}
+
+button {
+  padding: 2rem;
+  margin: auto;
+  margin-bottom: 3rem;
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  background: #fdfdfd;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: -10px -10px 30px 0 rgb(243, 243, 243), 10px 10px 30px 0 #b8b8c017;
+  box-sizing: border-box;
+  color: #d4d4d4;
+  cursor: pointer;
+  font-family: "Cascadia Code", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #f9f9fa;
+  box-shadow: rgb(243, 243, 245) 15px 30px 0 rgb(253, 252, 252), 15px 15px 30px 0 #1d0dca17;
+}
