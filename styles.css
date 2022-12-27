@@ -16,14 +16,14 @@ section {
   margin: auto;
   align-items: center;
   display: flex;
-  border: 22px dotted red;
+  border: 22px dotted hotpink;
   position: relative;
   box-sizing: border-box;
   margin-bottom: 3rem;
 }
 
 #container:hover {
-  border: 20px dotted white;
+  border: 22px dotted white;
 }
 
 .tree {

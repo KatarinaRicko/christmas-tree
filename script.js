@@ -1,7 +1,7 @@
 const container = document.getElementById("container");
 
 container.addEventListener("mouseover", (e) => {
-  container.style.backgroundColor = "red";
+  container.style.backgroundColor = "hotpink";
 });
 
 container.addEventListener("mouseout", (e) => {
@@ -32,6 +32,6 @@ const button = document.createElement("button");
 
 button.innerHTML = "Plant new trees";
 button.addEventListener("click", (e) => {
-  location.reload();
+  generateTrees();
 });
 document.body.appendChild(button);
