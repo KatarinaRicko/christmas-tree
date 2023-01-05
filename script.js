@@ -14,15 +14,20 @@ function generateTrees() {
   const treeCount = Math.floor(Math.random() * 25) + 1;
   for (let i = 0; i < treeCount; i++) {
     const randomTreeId = Math.floor(Math.random() * 25) + 1;
-    const randomX = Math.random() * (container.getBoundingClientRect().width - 190);
-    const randomY = Math.random() * (container.getBoundingClientRect().height - 190);
+    const randomX = Math.random() * (container.getBoundingClientRect().width - 180);
+    const randomY = Math.random() * (container.getBoundingClientRect().height - 180);
     const treeElement = document.createElement("div");
+    const treeTrunk = document.createElement("div");
     treeElement.classList.add("tree");
-    treeElement.style.setProperty("--bg-url", `url(images/tree${randomTreeId}.svg)`);
-    treeElement.style.setProperty("--hover-bg-url", `url(images/tree${randomTreeId}-positive.svg)`);
+    treeTrunk.classList.add("tree-trunk");
+    //treeElement.style.setProperty("--bg-url", `url(images/tree${randomTreeId}.svg)`);
+    //treeElement.style.setProperty("--hover-bg-url", `url(images/tree${randomTreeId}-positive.svg)`);
     treeElement.style.setProperty("--x", randomX);
     treeElement.style.setProperty("--y", randomY);
+    /*treeTrunk.style.setProperty("--x", randomX);
+    treeTrunk.style.setProperty("--x", randomY);*/
     container.appendChild(treeElement);
+    treeElement.appendChild(treeTrunk);
   }
 }
 
